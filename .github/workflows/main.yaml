@@ -1,0 +1,47 @@
+---
+name: Sync instances
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 0 * * *"
+jobs:
+  sync:
+    name: "sync"
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          path: main
+
+      - uses: actions/checkout@v2
+        with:
+          repository: onionltd/oniontree
+          path: oniontree
+
+      - uses: actions/setup-go@v2
+        with:
+          go-version: '1.14.0'
+
+      - uses: onionltd/tor-proxy@v1
+
+      - name: Build
+        run: |
+          make
+        working-directory: ./main
+
+      - name: Update PATH
+        run: |
+          echo ::set-env name=PATH::$PATH:$GITHUB_WORKSPACE/main
+
+      - name: Sync
+        run: |
+          securedrop-instances sync
+        env:
+          http_proxy: "socks5://localhost:9050"
+          https_proxy: "socks5://localhost:9050"
+        working-directory: ./oniontree
+
+      - name: Check status
+        run: |
+          test -z "$(git status --porcelain)"
+        working-directory: ./oniontree
