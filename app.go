@@ -3,7 +3,7 @@ package main
 import (
 	"encoding/json"
 	"fmt"
-	"github.com/onionltd/go-oniontree"
+	"github.com/oniontree-org/go-oniontree"
 	"github.com/urfave/cli/v2"
 	"golang.org/x/text/transform"
 	"golang.org/x/text/unicode/norm"

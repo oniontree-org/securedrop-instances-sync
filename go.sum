@@ -4,8 +4,8 @@ github.com/cpuguy83/go-md2man/v2 v2.0.0/go.mod h1:maD7wRr/U5Z6m/iR4s+kqSMx2CaBsr
 github.com/davecgh/go-spew v1.1.0/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
 github.com/fsnotify/fsnotify v1.4.9/go.mod h1:znqG4EE+3YCdAaPaxE2ZRY/06pZUdp0tY4IgpuI1SZQ=
 github.com/go-yaml/yaml v2.1.0+incompatible/go.mod h1:w2MrLa16VYP0jy6N7M5kHaCkaLENm+P+Tv+MfurjSw0=
-github.com/onionltd/go-oniontree v0.0.0-20200910184338-c288277dc6bc h1:EF1J38HeuxHM+DHoV/UwoqF0mbMq5mgEKXGKRQAhG0M=
-github.com/onionltd/go-oniontree v0.0.0-20200910184338-c288277dc6bc/go.mod h1:qS97XqYm4dbs82WgqEu/mwAs2Wm2JOIuvjiGkgCDt1o=
+github.com/oniontree-org/go-oniontree v0.0.0-20200920172018-bbf390a240a1 h1:FyDqPtQV4QqGe1qZFxmTJdAHmyxEakfzg+7cgIYdknU=
+github.com/oniontree-org/go-oniontree v0.0.0-20200920172018-bbf390a240a1/go.mod h1:YEUU7seNs9FXv8w22WHufRQX+0kPxWfrVYsb8T3RPKQ=
 github.com/otiai10/copy v1.2.0/go.mod h1:rrF5dJ5F0t/EWSYODDu4j9/vEeYHMkc8jt0zJChqQWw=
 github.com/otiai10/curr v0.0.0-20150429015615-9b4961190c95/go.mod h1:9qAhocn7zKJG+0mI8eUu6xqkFDYS2kb2saOteoSB3cE=
 github.com/otiai10/curr v1.0.0/go.mod h1:LskTG5wDwr8Rs+nNQ+1LlxRjAtTZZjtJW4rMXl6j4vs=
