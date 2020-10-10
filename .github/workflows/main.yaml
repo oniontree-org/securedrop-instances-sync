@@ -35,7 +35,7 @@ jobs:
 
       - name: Sync
         run: |
-          securedrop-instances sync
+          securedrop-instances sync --timeout 1m
         env:
           http_proxy: "socks5://localhost:9050"
           https_proxy: "socks5://localhost:9050"
