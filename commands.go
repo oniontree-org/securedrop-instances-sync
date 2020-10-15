@@ -21,7 +21,7 @@ func (a *Application) commands() {
 					&cli.StringFlag{
 						Name:  "url",
 						Usage: "SecureDrop API URL",
-						Value: "http://secrdrop5wyphb5x.onion/api/v1/directory/",
+						Value: "http://sdolvtfhatvsysc6l34d65ymdwxcujausv7k5jk4cy5ttzhjoi6fzvyd.onion/api/v1/directory/",
 					},
 					&cli.StringSliceFlag{
 						Name:  "tag",
