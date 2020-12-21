@@ -31,7 +31,7 @@ jobs:
 
       - name: Update PATH
         run: |
-          echo ::set-env name=PATH::$PATH:$GITHUB_WORKSPACE/main
+          echo "PATH=$PATH:$GITHUB_WORKSPACE/main" >> $GITHUB_ENV
 
       - name: Sync
         run: |
